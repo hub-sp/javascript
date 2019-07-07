@@ -61,3 +61,23 @@ The objects in this document are:
 * `Object`
 * `Map`
 This will not cover `WeakMap`s and `WeakSet`s.
+
+Objects declared with `const` are still mutable, such as `const out = {}`. You can still modify `out` by doing stuff like `out['prop'] = 'value';`.
+
+### Array
+Arrays are 0-based indexed objects.
+When created via constructor function, you get 'empty' spaces
+```js
+const array = Array(5);
+console.log(array);
+// => [ <5 empty items> ]
+```
+You can overcome this by using the `fill` function.
+```js
+const array = Array(5).fill(0);
+console.log(array);
+// => [ 0, 0, 0, 0, 0 ]
+```
+This will fill *every* element with the value given.
+#### Array methods
+`Array.from` can create an array from any array-like value. This includes other Arrays and Sets.

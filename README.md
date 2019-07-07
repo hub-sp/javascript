@@ -53,3 +53,11 @@ Strings are your 'text', and these are used in nearly every javascript applicati
 * Any value can be coerced to a string by doing `String(value);`
 
 ## Objects
+There are many types of objects, so I will showcase how to test for which type of object, as well on the basics of it.
+A value is considered an `object` if `typeof value === 'object'` evaluates to `true`.
+The objects in this document are:
+* `Array`
+* `Set`
+* `Object`
+* `Map`
+This will not cover `WeakMap`s and `WeakSet`s.
